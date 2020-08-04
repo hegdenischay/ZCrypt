@@ -11,10 +11,10 @@ def slowprint(s):
 clear = ""
 if "Linux" in platform.system():
     clear = "clear"
-os.system(clear)
 
 
 def banner():
+    os.system('tput reset')
     print("""
 <--------------->
   <------------>
